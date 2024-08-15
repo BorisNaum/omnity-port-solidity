@@ -16,6 +16,10 @@ const config: HardhatUserConfig = {
     }
   },
   networks: {
+    bitfinity: {
+	url: `https://mainnet.bitfinity.network`,  
+ 	accounts: [DEPLOY_PRI_KEY],
+    },
     bevm: {
       url: `https://rpc-mainnet-1.bevm.io`,
       accounts: [DEPLOY_PRI_KEY],
