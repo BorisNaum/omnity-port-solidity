@@ -16,6 +16,10 @@ const config: HardhatUserConfig = {
     }
   },
   networks: {
+    ailayer: {
+      url: `https://mainnet-rpc.ailayer.xyz`,
+      accounts: [DEPLOY_PRI_KEY],
+    },
     bevm: {
       url: `https://rpc-mainnet-1.bevm.io`,
       accounts: [DEPLOY_PRI_KEY],
