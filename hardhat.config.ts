@@ -16,6 +16,10 @@ const config: HardhatUserConfig = {
     }
   },
   networks: {
+    ethereum: {
+      url: `https://1rpc.io/eth`,
+      accounts: [DEPLOY_PRI_KEY],
+    },
     bevm: {
       url: `https://rpc-mainnet-1.bevm.io`,
       accounts: [DEPLOY_PRI_KEY],

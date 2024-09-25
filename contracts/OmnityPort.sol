@@ -341,6 +341,8 @@ contract OmnityPortContract is
                     return false;
                 }
             }
+
+
             return true;
         } else {
             return false;
