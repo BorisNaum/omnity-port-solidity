@@ -9,6 +9,7 @@ const config: HardhatUserConfig = {
   solidity: {
     version: "0.8.20",
     settings:{
+      evmVersion: "paris",
       optimizer: {
         enabled: true,
         runs: 200
@@ -43,6 +44,10 @@ const config: HardhatUserConfig = {
     merlin: {
 	    url:`https://rpc.merlinchain.io`,
 	    accounts: [DEPLOY_PRI_KEY],
+    },
+    core: {
+        url: `https://1rpc.io/core`,
+        accounts: [DEPLOY_PRI_KEY],
     }
   }
 };
