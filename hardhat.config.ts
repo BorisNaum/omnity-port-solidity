@@ -39,6 +39,10 @@ const config: HardhatUserConfig = {
     merlin: {
 	    url:`https://rpc.merlinchain.io`,
 	    accounts: [DEPLOY_PRI_KEY],
+    },
+    base: {
+        url:`https://base.llamarpc.com`,
+        accounts: [DEPLOY_PRI_KEY],
     }
   }
 };
