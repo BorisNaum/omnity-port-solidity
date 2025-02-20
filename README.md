@@ -58,7 +58,7 @@ The `command` in `directive` has the following enum options:
 
 The functions of the `command`s are:
 
-* `AddToken`: Add a token to the `Omnity port` contract. If the param `tokenContractAddress` is not specified, a token contract will be deployed automatically, the address of the token contract will be stored. If the `tokenContractAddress` is specifed, the contract on the address must have the same interfaces with the `Token contract` in this repository. (This is ensured by the `Omnity Route`).
+* `AddToken`: Add a token to the `Omnity port` contract. If the param `tokenContractAddress` is not specified, a token contract will be deployed automatically, the address of the token contract will be stored. If the `tokenContractAddress` is specified, the contract on the address must have the same interfaces with the `Token contract` in this repository. (This is ensured by the `Omnity Route`).
 * `UpdateFee`: Update the fee for token transport/redeem of corresponding settlement chain.
 * `Suspend`: Suspend the `Omnity port` contract. No further directive will be executed.
 * `Reinstate`: Reinstate the `Omnity port` contract.
